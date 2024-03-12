@@ -2,14 +2,21 @@ body{
     margin: 0;
     font-size: 16px;
 }
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
 #banner{
     background-color: rgb(155, 245, 185);
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
 
 }
 #banner > ul{
-   color: rgb(187, 105, 72);
+   color: rgb(136, 69, 43);
    list-style: none;
    display: flex;
    
@@ -21,10 +28,27 @@ body{
     border-left: 1px solid black;
 }
 #banner-logo{
-    margin: 5px 5px 0 5px;
+    margin: 0 5px 0 5px;
+    padding-top: 10px; 
     max-width: 50px;
-    border-radius: 50%;
-    background-color: white;
+    text-decoration-line: none;
+    color: black;
+}
+.background-img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-top: 50px;
+}
+#opening{
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    padding: 5% 0 30% 0;
+}
+#opening > h1{
+    font-size: 4.5em;
+    margin-bottom: 0;
 }
 .recipe{
     display:flex;
@@ -34,6 +58,12 @@ body{
     padding: 50px 0;
 }
 @media screen and (width <= 768px){
+    #opening > h1{
+        font-size: 2em;
+    }
+    #opening > p{
+        display:none;
+    }
     .recipe{
         flex-wrap: wrap;
         width: 80%;
@@ -55,5 +85,5 @@ footer{
 #footer-text{
     padding-top: 60px;
     text-align: center;
-    color:rgb(187, 105, 72);
+    color:rgb(136, 69, 43);
 }
