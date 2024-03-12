@@ -8,3 +8,5 @@ skills demonstrated within this project:
 -basic HTML 
 -proper hierarchy 
 -git workflow
+
+All images were taken from Pixabay.
